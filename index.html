@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="bg-black">
+    <div>
+        <nav class="w-full">
+            <div
+                class="flex lg:w-full md:w-full justify-start lg:ml-10 md:ml-40 ml-6 lg:gap-10 md:gap-5 sm:gap-10 gap-3 py-5 fixed max-w-full z-5">
+                <img src="logg.jpg" alt=""
+                    class="w-0 sm:w-15 md:w-20 lg:w-30 h-10 sm:h-15 md:h-20 lg:h-30 rounded-full">
+                <a href="#home">
+                    <h1
+                        class="lg:font-semibold md:font-semibold font-thin tracking-[0.10em] pt-3 text-xl cursor-pointer sm:w-10 md:w-20 text-white">
+                        Home</h1>
+                </a>
+                <a href="#menu">
+                    <h1
+                        class="font-semibold md:font-semibold font-thin tracking-[0.10em] pt-3 text-xl cursor-pointer sm:w-10 md:w-20 text-white">
+                        Menu</h1>
+                </a>
+                <a href="#location">
+                    <h1
+                        class="font-semibold md:font-semibold font-thin tracking-[0.10em] lg:mr-4 pt-3 text-xl cursor-pointer sm:w-10 md:w-20 text-white">
+                        Location</h1>
+                </a>
+                <a href="#contact">
+                    <h1
+                        class="font-semibold md:font-semibold font-thin tracking-[0.10em] lg:ml-0 md:ml-4 sm:ml-5  pt-3 text-xl cursor-pointer sm:w-10 md:w-20 text-white">
+                        Contact</h1>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <section id="home" class="flex justify-between pt-50 mx-20 ">
+        <div class="mt-10">
+            <div class="">
+                <h1 class="text-6xl  font-lighter text-white">START YOUR <span class="font-bold">DAY</span><br><span
+                        class="font-bold">WITH </span>A COFFEE.</h1>
+            </div>
+            <a href="#all"><button
+                    class="bg-linear-to-b from-green-700 to-green-500 mt-10 px-10 py-2 rounded-full text-4xl text-white">MORE↓</button></a>
+        </div>
+        <div
+            class="h-screen sm:h-screen-0 w-0 max-h-234 sm:w-0 md:w-0 lg:w-100 bg-linear-to-b from-green-700 to-green-500 absolute right-0 top-0 rounded-l-4xl">
+            <p
+                class="font-extrabold tracking-[4px] rotate-270 lg:text-7xl md:hidden lg:block md:block hidden top-83 right-30 text-white w-175 relative z-5">
+                DON
+                MACHIATOS</p>
+            <p
+                class="font-extrabold tracking-[4px] rotate-270 lg:text-7xl md:text-6xl lg:block md:block hidden mt-65 text-black/20 w-175 absolute">
+                DON MACHIATOS</p>
+            <p
+                class="font-extrabold tracking-[4px] rotate-270 lg:text-7xl md:text-6xl lg:block md:block hidden mt-65 right-15 text-black/50 w-175 relative">
+                DON MACHIATOS</p>
+        </div>
+        <img src="matchaberry.png" alt=""
+            class="w-0 lg:w-170  md:w-0 lg:h-170 md:h-0 h-150 rotate-12 absolute right-30 top-0">
+
+    </section>
+
+    <section class="mt-120  lg:w-full md:min-w-350">
+        <div id="menu" class="text-white lg:ml-48 md:ml-30 ml-10 mt-50">
+            <h1 class="text-3xl w-fit border-b-3 border-green-500 py-2 font-mono">Menu</h1>
+        </div>
+        <div class="flex justify-center">
+            <div id="all" class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-20 mt-20 font-mono">
+                <div>
+                    <div
+                        class="hover:bg-amber-500/20 bg-amber-600/70 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="spanish.png" alt=""
+                            class="w-35 md:w-40 sm:30 lg:w-50 absolute ml-9 mt-3 mb-13 group-hover:rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Spanish Latte</p>
+                </div>
+                <div>
+                    <div
+                        class="hover:bg-purple-400/20 bg-purple-500/20 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="ube.png" alt=""
+                            class="w-35 md:w-40 sm:30 lg:w-50 absolute ml-9 mt-3 mb-13 group-hover:rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Pure Ube</p>
+                </div>
+                <div>
+                    <div
+                        class="hover:bg-green-500/20 bg-green-600/60 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="matchaberry.png" alt=""
+                            class="w-35 md:w-40 sm:30 lg:w-50 ml-9 mt-3 absolute mb-13 group-hover:-rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Matcha</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-20 mt-10 font-mono">
+                <div>
+                    <div
+                        class="hover:bg-blue-500/20 bg-blue-600/60 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="oreo-bottle.png" alt=""
+                            class="ml-9 mt-3 w-35 md:w-40 sm:30 lg:w-50 absolute mb-13 group-hover:rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Oreo Coffee</p>
+                </div>
+                <div>
+                    <div
+                        class="hover:bg-rose-500/20 bg-rose-600/60 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="donya-removebg-preview (1).png" alt=""
+                            class=" w-35 md:w-40 sm:30 lg:w-50 absolute mb-13 group-hover:rotate-30 rotate-8 ml-25 mt-7 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Donya Berry</p>
+                </div>
+                <div>
+                    <div
+                        class="hover:bg-slate-700/20 bg-slate-800/80 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="donii.png" alt=""
+                            class="w-35 md:w-40 sm:30 lg:w-50  ml-9 mt-3 absolute mb-13 group-hover:-rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Don Barako</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-20 mt-10 font-mono">
+                <div>
+                    <div
+                        class="hover:bg-red-500/20 bg-red-600/60 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="blackforest.png" alt=""
+                            class="ml-9 mt-3 w-35 md:w-40 sm:30 lg:w-50 absolute mb-13 group-hover:rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Black Forest</p>
+                </div>
+                <div>
+                    <div
+                        class="hover:bg-green-500/20 bg-green-600/80 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="don.png" alt=""
+                            class=" w-35 md:w-40 sm:30 lg:w-50 absolute mb-13 group-hover:rotate-20  ml-10 mt-7 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Don Matchatos</p>
+                </div>
+                <div>
+                    <div
+                        class="hover:bg-amber-700/20 bg-amber-800/80 duration-300 cursor-pointer w-60 border-double group border-5 border-white/40 h-60 flex justify-center items-center">
+                        <img src="dondarko.png" alt=""
+                            class="w-35 md:w-40 sm:30 lg:w-50  ml-9 mt-3 absolute mb-13 group-hover:-rotate-20 duration-300 mr-8">
+                    </div>
+                    <p class="text-white text-2xl text-center mt-2">Don Darko</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="location" class="relative mt-60 lg:w-full md:min-w-350">
+        <div id="location" class="text-white lg:ml-48 md:ml-30 ml-10 mb-15">
+            <h1 class="text-3xl w-fit border-b-3 border-green-500 py-2 font-mono">Location</h1>
+        </div>
+        <div class="flex justify-center">
+            <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-20">
+                <div class="lg:block md:block hidden">
+                    <iframe class="shadow-xl group-hover:brightness-50"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.403228374046!2d125.68110737481335!3d7.308515492699347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9450046e65fd9%3A0x720cd6ee72b5ae18!2sDon%20Macchiatos%20Panabo!5e0!3m2!1sen!2sph!4v1758003524096!5m2!1sen!2sph"
+                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="lg:hidden md:hidden block">
+                    <iframe class="shadow-xl group-hover:brightness-50"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.403228374046!2d125.68110737481335!3d7.308515492699347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9450046e65fd9%3A0x720cd6ee72b5ae18!2sDon%20Macchiatos%20Panabo!5e0!3m2!1sen!2sph!4v1758003524096!5m2!1sen!2sph"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="text-white mt-5 lg:text-xl md:text-lg text-sm font-thin tracking-[5px] text-center">
+                    <h1 class="text-green-500 "> CEBU’S FIRST 39 PESOS COFFEE</h1>
+                    <h1 class="text-green-500 ">IS NOW OPEN IN PANABO ☕️</h1>
+                    <div class="my-7">
+                        <h1 class="mb-2">📍6225 National Highway,</h1>
+                        <h1 class="mb-2 text-green-500">Brgy. San Francisco, Panabo</h1>
+                        <h1 class="mb-2">City - In front of </h1>
+                        <h1 class="">Maryknoll and Beside 7/11</h1>
+                    </div>
+
+                    <div class="text-white tracking-[2px]">
+                        <h1 class="  ">WE ARE OPEN FROM:</h1>
+                        <h1 class="my-2">MONDAY TO SUNDAY</h1>
+                        <h1 class="">10:00AM - 2:00AM</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="relative pt-10 pb-20 mt-50 bg-gradient-to-b from-green-500 to-green-700 lg:w-full md:min-w-350">
+        <div class="flex justify-center lg:gap-165 md:gap-100 sm:gap-50 gap-30">
+            <div id="contact" class="lg:flex md:flex hidden gap-2 mt-12 py-2 text-black shadow-xl px-2 bg-gradient-to-r from-green-700 to-green-900 rounded-xl">
+                <i class="fa-solid fa-phone text-2xl"></i>
+                <h1 class="text-white">+639641418696</h1>
+            </div>
+            <div class="p-2 bg-white shadow-xl rounded-xl ">
+                <h1 class="font-bold">follow us on</h1>
+                <div class="mt-5">
+                    <a href="https://www.facebook.com/DonMacPanabo"><i
+                            class="fa-brands fa-square-facebook text-blue-700 text-2xl"></i></a>
+                    <a href="https://www.tiktok.com/@donmacchiatosdj3"><i
+                            class="fa-brands fa-tiktok text-2xl text-black"></i></a>
+                    <i
+                        class="fa-brands fa-instagram bg-linear-to-r from-yellow-400 to-rose-600 bg-clip-text text-2xl font-extrabold text-transparent"></i>
+                </div>
+            </div>
+        </div>
+        <div id="contact"
+            class="lg:hidden md:hidden flex gap-2 mt-12 py-2 text-black ml-50 shadow-xl w-45 bg-white px-2 bg-gradient-to-r from-green-700 to-green-900 rounded-xl">
+            <i class="fa-solid fa-phone text-2xl"></i>
+            <h1 class="text-white ">+639641418696</h1>
+        </div>
+        <div class="text-center flex justify-center items-center mt-5 gap-3  ">
+            <hr class="w-90 text-white mt-1 shadow-xl">
+            <p class=" text-xl hover:border-b  text-black">©
+                2025 <span class="text-white">Crismer</span>
+                Design.
+            </p>
+            <hr class="w-90 text-white shadow-xl mt-1">
+        </div>
+    </footer>
+</body>
+
+</html>
